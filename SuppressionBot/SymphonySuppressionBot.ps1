@@ -50,6 +50,10 @@
     #    suppress help
 
 # ---------------------------------------------------------------------------------------------------------
+
+#Forces PowerShell to use TLS 1.2 as a minimum (requirement since Symphony 1.52)
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+ 
 # Fill in these Variables
 
     $certificateFileAndPath =     "C:\mycerts\bot.user1.p12"
