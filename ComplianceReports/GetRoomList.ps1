@@ -12,7 +12,9 @@
         # 3. Select "Delimited" and click Next
         # 4. Select only "Comma" and a "Text qualifier" of a single quote (') and click Finish
 
-        
+#Forces PowerShell to use TLS 1.2 as a minimum (requirement since Symphony 1.52)
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+         
 # Fill in these Variables
 
 
