@@ -15,7 +15,9 @@
         # 6. Change the "Column data format" to Date/YMD for each and click Finish
         # 7. Format the ID (column A) as a number with zero decimal places
         
-
+#Forces PowerShell to use TLS 1.2 as a minimum (requirement since Symphony 1.52)
+    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+ 
 # Fill in these Variables
 
     $certificateFileAndPath =     "C:\mycerts\my_Bot_cert.p12"
